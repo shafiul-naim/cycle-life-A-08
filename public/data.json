@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "name": "Norco Aurum C7.1 Frameset",
+      "img": "../img/cycle-1.png",
+      "price": "540"
+    },
+    {
+      "id": 2,
+      "name": "Haro Thread Slope",
+      "img": "../img/cycle-2.png",
+      "price": "700"
+    },
+    {
+      "id": 3,
+      "name": "Jamis Ventura A1",
+      "img": "../img/cycle-3.png",
+      "price": "1000"
+    },
+    {
+      "id": 4,
+      "name": "Cannondale SuperSix EVO Carbon Disc Ultegra",
+      "img": "../img/cycle-4.png",
+      "price": "1500"
+    },
+    {
+      "id": 5,
+      "name": "Charge Bikes Comfort",
+      "img": "../img/cycle-5.png",
+      "price": "2000"
+    },
+    {
+      "id": 6,
+      "name": "Haro Westlake",
+      "img": "../img/cycle-6.png",
+      "price": "550"
+    },
+    {
+      "id": 7,
+      "name": "Cannondale SuperX 2",
+      "img": "../img/cycle-7.png",
+      "price": "300"
+    },
+    {
+      "id": 8,
+      "name": "Cannondale Kids Trail 20-inch",
+      "img": "../img/cycle-8.png",
+      "price": "4000"
+    },
+    {
+      "id": 9,
+      "name": "Kink Kicker",
+      "img": "../img/cycle-9.png",
+      "price": "200"
+    }
+  ]
+  
