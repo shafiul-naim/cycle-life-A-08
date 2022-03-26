@@ -7,10 +7,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap:35px;
     margin: 100px 20px;
+    justify-items: center;
 }
 .cart-container{
-    margin: 100px 25px;
-    /* padding: 20px; */
+    margin: 100px 15px;
     text-align: center;
     border-radius: 15px;
     box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
@@ -25,10 +25,13 @@
     margin-top: 0;
 }
 .selected-cart{ 
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
     padding:0 30px;
+    height: 50px;
     margin-top: 30px;
-    display: flex;
     align-items: center;
+    justify-items: center;
 }
 .selected-cart img{
     width: 40px;
@@ -40,9 +43,24 @@
 }
 .selected-cart h2{
     font-size: 15px;
-    margin-left:40px
+    margin-left:5px
 }
-
+.selected-cart button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    margin: 6px;
+    border: 1px solid red;
+    color: rgb(211, 95, 95);
+}
+.selected-cart button:hover{
+    color: rgb(173, 4, 4);
+}
+.selected-cart button:active{
+    color: rgb(19, 0, 0);
+}
 .cart-btn{
     display: flex;
     flex-direction: column;
@@ -53,13 +71,15 @@
 .choose{
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
 }
 .choose button{
-    display: inline-flex;
+      display: inline-flex;
       width: 75%;
-      padding: 10px 20px;
+      padding: 10px 10px;
       text-align: center;
-      margin: 10px;
+      margin: 10px 30px;
       background:#009578;
       color: white;
       border:none;
@@ -78,4 +98,26 @@
 }
 .choose button:active{
     background: #006e58;
+}
+.chosen h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #42776a;
+    height: 50px;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                15px 15px 15px rgba(0,0,0,0.1),
+                inset -5px -5px 5px rgba(255,255,255,0.2),
+                inset 5px 5px 5px rgba(0,0,0,0.1);
+}
+
+
+
+@media screen and (max-width:480px) {
+    .shop-container{
+        grid-template-columns: 1fr;
+    }
+    .products-container{
+        grid-template-columns: 1fr;
+    }
 }

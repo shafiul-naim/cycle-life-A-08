@@ -1,6 +1,7 @@
 .header{
     height: 80px;
-    background-color: #b7d3e6;
+    width: auto;
+    background-color: #b2e2d6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,5 +13,7 @@
 .header p{
     color: #151b1f;
     font-size: 30px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
+
+

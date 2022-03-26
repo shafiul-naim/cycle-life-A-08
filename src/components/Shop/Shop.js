@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import './Shop.css';
+import { AiOutlineDelete } from "react-icons/ai";
 
 const Shop = () => {
 
@@ -56,6 +57,7 @@ const Shop = () => {
                             key={index}>
                             <img src={item.img} alt="" />
                             <h2>{item.name}</h2>
+                            <button><AiOutlineDelete></AiOutlineDelete></button>
                         </div>
                         </>
                     )
@@ -63,13 +65,16 @@ const Shop = () => {
                 {
                     <>
                     <div className='choose'>
-                    <button onClick={() => chooseOne()}>Choose one</button>
+                    <button key={cart.id} onClick={() => chooseOne()}>Choose one</button>
                     <button onClick={() => chooseAgain()}>Choose again</button>
                     </div>
                     </>
                 }
                 {
-                    <h1>{randomCycle}</h1>
+                    <div className='chosen'>
+                        <h2>{randomCycle}</h2>
+                    </div>
+                    
                 }
               
             </div>
