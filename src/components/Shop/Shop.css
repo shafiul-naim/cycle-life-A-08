@@ -10,7 +10,7 @@
 }
 .cart-container{
     margin: 100px 25px;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
     border-radius: 15px;
     box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
@@ -18,8 +18,14 @@
                 inset -5px -5px 5px rgba(255,255,255,0.2),
                 inset 5px 5px 5px rgba(0,0,0,0.1);
 }
+.cart-title{
+    background-color: #0e1a17ce;
+    padding: 30px;
+    color: white;
+    margin-top: 0;
+}
 .selected-cart{ 
-    padding: 10px;
+    padding:0 30px;
     margin-top: 30px;
     display: flex;
     align-items: center;
@@ -30,7 +36,7 @@
     object-fit: contain;
     border: 1px solid black;
     border-radius: 50%;
-    padding: 15px;
+    padding: 10px;
 }
 .selected-cart h2{
     font-size: 15px;
