@@ -24,7 +24,7 @@ const Shop = () => {
 
 
     const chooseOne = () => {
-        console.log(cart)
+       
         const randomCycle = cart[  
             Math.floor(Math.random() * cart.length)
           ];
