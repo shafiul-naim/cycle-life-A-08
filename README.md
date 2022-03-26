@@ -4,7 +4,11 @@ This is a website about selecting and buying amazing cycle.
 
 ## github link
 
-[Live site link](https://github.com/Programming-Hero-Web-Course4/lucky-one-shafiul-naim#readme)
+Click here to view [Github link](https://github.com/Programming-Hero-Web-Course4/lucky-one-shafiul-naim#readme)
+
+### Netlify live site link
+
+Visit the website [Netlify link]()
 
 <!-- # Getting Started with Create React App
 
