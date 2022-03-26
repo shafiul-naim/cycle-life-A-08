@@ -38,3 +38,10 @@
     font-size: 15px;
     margin-left:10px
 }
+
+.cart-btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 10px;
+}

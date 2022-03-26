@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css';
 
@@ -21,11 +22,18 @@ const Shop = () => {
         console.log(newCart)
     }
 
+
+    const chooseOne = () => {
+        console.log(cart)
+       
+    } 
+
+
     return (
         <div className='shop-container'>
             <div className="products-container">
                 {
-                    cycles.map(cycle => <Product 
+                  cycles.map(cycle => <Product 
                         key={cycle.id}
                         cycle={cycle}
                         handleAddToCart={handleAddToCart}
@@ -34,21 +42,14 @@ const Shop = () => {
             </div>
 
             <div className="cart-container">
-                <h2>Selected Cycles</h2>
+               
+               <h3>Selected ones</h3>
                 {
-                    cart.map((item, index) => 
-                    <div key={index} className='selected-cart'>
-                        <img src={item.img} alt="" />
-                        <h2>{item.name}</h2>
-                    </div>
-                    )
+                    cart.map(item => <Cart key={item.id}
+                    item={item}
+                    ></Cart>)
                 }
-                {
-                    <div className='cart-btn'>
-                        <button>Choose one</button>
-                        <button>Choose again</button>
-                    </div>
-                }
+                
             </div>
         </div>
     );
