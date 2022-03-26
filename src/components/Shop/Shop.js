@@ -19,7 +19,6 @@ const Shop = () => {
     
         const newCart = [...cart, cycle]
         setCart(newCart);
-        console.log(newCart)
     }
 
 
@@ -29,7 +28,12 @@ const Shop = () => {
             Math.floor(Math.random() * cart.length)
           ];
           setRandomCycle(`${randomCycle.name}`)
-    } 
+    } ;
+
+    const chooseAgain = () => {
+        setCart([]);
+        setRandomCycle([]);
+    }
 
 
     return (
@@ -58,7 +62,7 @@ const Shop = () => {
                 }
                 {
                     <><button onClick={() => chooseOne()}>Choose one</button>
-                    <button>Choose again</button></>
+                    <button onClick={() => chooseAgain()}>Choose again</button></>
                 }
                 {
                     <h1>{randomCycle}</h1>
