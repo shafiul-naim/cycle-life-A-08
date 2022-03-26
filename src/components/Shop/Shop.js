@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css';
 
 const Shop = () => {
 
     const [cycles, setCycles] = useState([]);
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState([]);
+    const [randomCycle, setRandomCycle] = useState([])
 
     useEffect( () => {
         fetch('data.json')
@@ -25,7 +25,10 @@ const Shop = () => {
 
     const chooseOne = () => {
         console.log(cart)
-       
+        const randomCycle = cart[  
+            Math.floor(Math.random() * cart.length)
+          ];
+          setRandomCycle(`${randomCycle.name}`)
     } 
 
 
@@ -42,15 +45,27 @@ const Shop = () => {
             </div>
 
             <div className="cart-container">
-               
-               <h3>Selected ones</h3>
+                <h2>Selected Cycles</h2>
                 {
-                    cart.map(item => <Cart key={item.id}
-                    item={item}
-                    ></Cart>)
+                    cart.map((item, index) => 
+                    <><div
+                            key={index} className='selected-cart'>
+                            <img src={item.img} alt="" />
+                            <h2>{item.name}</h2>
+                        </div>
+                        </>
+                    )
                 }
-                
+                {
+                    <><button onClick={() => chooseOne()}>Choose one</button>
+                    <button>Choose again</button></>
+                }
+                {
+                    <h1>{randomCycle}</h1>
+                }
+              
             </div>
+           
         </div>
     );
 };
