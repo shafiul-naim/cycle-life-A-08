@@ -49,11 +49,11 @@ const Shop = () => {
             </div>
 
             <div className="cart-container">
-                <h2>Selected Cycles</h2>
+                <h2 className='cart-title'>Selected Cycles</h2>
                 {
                     cart.map((item, index) => 
-                    <><div
-                            key={index} className='selected-cart'>
+                    <><div className='selected-cart'
+                            key={index}>
                             <img src={item.img} alt="" />
                             <h2>{item.name}</h2>
                         </div>
@@ -61,8 +61,12 @@ const Shop = () => {
                     )
                 }
                 {
-                    <><button onClick={() => chooseOne()}>Choose one</button>
-                    <button onClick={() => chooseAgain()}>Choose again</button></>
+                    <>
+                    <div className='choose'>
+                    <button onClick={() => chooseOne()}>Choose one</button>
+                    <button onClick={() => chooseAgain()}>Choose again</button>
+                    </div>
+                    </>
                 }
                 {
                     <h1>{randomCycle}</h1>
