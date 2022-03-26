@@ -34,9 +34,20 @@ const Shop = () => {
             </div>
 
             <div className="cart-container">
-                <h3>this is cart</h3>
+                <h2>Selected Cycles</h2>
                 {
-                    cart.map((item, index) => <h2 key={index}>{item.name}</h2>)
+                    cart.map((item, index) => 
+                    <div key={index} className='selected-cart'>
+                        <img src={item.img} alt="" />
+                        <h2>{item.name}</h2>
+                    </div>
+                    )
+                }
+                {
+                    <div className='cart-btn'>
+                        <button>Choose one</button>
+                        <button>Choose again</button>
+                    </div>
                 }
             </div>
         </div>

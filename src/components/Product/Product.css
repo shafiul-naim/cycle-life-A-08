@@ -1,15 +1,17 @@
 .product{
+    width: 300px;
+    height: 400px;
     border-radius: 15px;
     box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
                 15px 15px 15px rgba(0,0,0,0.1),
                 inset -5px -5px 5px rgba(255,255,255,0.2),
                 inset 5px 5px 5px rgba(0,0,0,0.1);
-    width: 350px;
+   
 }
 .image-container{
-    width: 297px;
-    height: 320px;
-    padding: 25px;
+    width: 270px;
+    height: 200px;
+    padding: 15px;
 }
 .image-container img{
     height: 100%;
@@ -17,18 +19,18 @@
     object-fit: contain;
 }
 .product-info{
-    margin:5px 20px;
+    margin:5px 15px;
 }
-.product-info p{
+.product-title{
     margin-top: 5px;
     margin-bottom: 0;
-    font-size: 20px;
     padding:5px 0;
+    font-size: 18px;
 }
 .product-price{
-    font-size: 1.2em;
+    font-size: 1em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight:bolder
+    font-weight:lighter;
 }
   .btn-cart{
       display: inline-flex;
@@ -57,12 +59,12 @@
       display: inline-flex;
       font-size: 1.5em;
       align-items: center;
-      padding: 0 24px;
       color: white;
       height: 100%;
 }
 
   .icon {
       font-size: 2rem;
+      margin-left: 15px;
   }
   
