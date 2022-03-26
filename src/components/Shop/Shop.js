@@ -37,6 +37,7 @@ const Shop = () => {
     }
 
 
+
     return (
         <div className='shop-container'>
             <div className="products-container">
