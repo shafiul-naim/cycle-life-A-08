@@ -1,15 +1,14 @@
 .product{
     border-radius: 15px;
-      box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
-                15px 15px 15px rgba(0,0,0,0.1);
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+                15px 15px 15px rgba(0,0,0,0.1),
+                inset -5px -5px 5px rgba(255,255,255,0.2),
+                inset 5px 5px 5px rgba(0,0,0,0.1);
     width: 350px;
-    position: relative;
-    justify-self: center;
 }
 .image-container{
-    width: 320px;
+    width: 297px;
     height: 320px;
-    background-color: #fff;
     padding: 25px;
 }
 .image-container img{
@@ -44,6 +43,8 @@
       font-weight: 500;
       cursor: pointer;
       border-radius: 15px;
+      align-items: center;
+      justify-content: center;
   }
   .btn-cart:hover{
       background: #008168;
@@ -62,6 +63,6 @@
 }
 
   .icon {
-      font-size: 1.8rem;
+      font-size: 2rem;
   }
   

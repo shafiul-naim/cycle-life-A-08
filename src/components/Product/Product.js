@@ -4,8 +4,7 @@ import './Product.css'
 
 const Product = ({cycle, handleAddToCart}) => {
     
-    const {name, img, price} = cycle
-    console.log(cycle)
+    const {name, img, price} = cycle;
 
     return (
         <div className='product'>
