@@ -1,17 +1,25 @@
+import { BsCart } from "react-icons/bs";
 import React from 'react';
 import './Product.css'
 
-const Product = (props) => {
+const Product = ({cycle, handleAddToCart}) => {
     
-    const {name, img, price, id} = props.cycle
-    console.log(props.cycle)
+    const {name, img, price} = cycle
+    console.log(cycle)
 
     return (
         <div className='product'>
-            <img src={img} alt="" />
-            <p>name: {name}</p>
-            <p>price: ${price}</p>
-            <p>id: {id}</p>
+            <div className='image-container'>
+                <img src={img} alt="" />
+            </div>
+            <div className='product-info'>
+            <h2 className="product-title">{name}</h2>
+            <p className="product-price"> Price: ${price}</p>
+            </div>
+             <button className="btn-cart" onClick={() => handleAddToCart(cycle)}>
+                    <p className='btn-text'>Add to cart</p>
+                    <p><BsCart className='icon'></BsCart></p>
+            </button>
         </div>
     );
 };

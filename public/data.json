@@ -1,56 +1,56 @@
 [
     {
       "id": 1,
-      "name": "Norco Aurum C7.1 Frameset",
-      "img": "../src/img/cycle-1.png" ,
+      "name": "Norco Aurum",
+      "img": "https://i.ibb.co/Jzv6MQq/cycle-1.png" ,
       "price": "540"
     },
     {
       "id": 2,
       "name": "Haro Thread Slope",
-      "img": "../src/img/cycle-2.png",
+      "img": "https://i.ibb.co/MfKM7mR/cycle-2.png",
       "price": "700"
     },
     {
       "id": 3,
-      "name": "Jamis Ventura A1",
-      "img": "../src/img/cycle-3.png",
+      "name": "Jamis Ventura",
+      "img": "https://i.ibb.co/KrbNj7b/cycle-3.jpg",
       "price": "1000"
     },
     {
       "id": 4,
-      "name": "Cannondale SuperSix EVO Carbon Disc Ultegra",
-      "img": "../src/img/cycle-4.png",
+      "name": "Cannondale SuperSix EVO",
+      "img": "https://i.ibb.co/x72PM1W/cycle-4.png",
       "price": "1500"
     },
     {
       "id": 5,
       "name": "Charge Bikes Comfort",
-      "img": "../src/img/cycle-5.png",
+      "img": "https://i.ibb.co/cY4kTsb/cycle-5.png",
       "price": "2000"
     },
     {
       "id": 6,
       "name": "Haro Westlake",
-      "img": "../src/img/cycle-6.png",
+      "img": "https://i.ibb.co/c1pDkWb/cycle-6.png",
       "price": "550"
     },
     {
       "id": 7,
       "name": "Cannondale SuperX 2",
-      "img": "../src/img/cycle-7.png",
+      "img": "https://i.ibb.co/Qb16F5f/cycle-7.png",
       "price": "300"
     },
     {
       "id": 8,
-      "name": "Cannondale Kids Trail 20-inch",
-      "img": "../src/img/cycle-8.png",
+      "name": "Cannondale Kids Trail",
+      "img": "https://i.ibb.co/BCV060G/cycle-8.png",
       "price": "4000"
     },
     {
       "id": 9,
       "name": "Kink Kicker",
-      "img": "../src/img/cycle-9.png",
+      "img": "https://i.ibb.co/MGx37Zx/cycle-9.jpg",
       "price": "200"
     }
   ]
