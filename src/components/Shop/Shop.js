@@ -39,8 +39,8 @@ const Shop = () => {
 
 
     return (
-        <div className='shop-container'>
-            <div className="products-container">
+        <div className='shop-container bg-secondary'>
+            <div className="products-container ">
                 {
                   cycles.map(cycle => <Product 
                         key={cycle.id}
